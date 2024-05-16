@@ -12,11 +12,11 @@ const redisClient = new Redis(
 );
 
 redisClient.on('connect', () => {
-  console.info('Connect Redis Index successfully');
+  console.info('Connect Redis successfully');
 });
 
 redisClient.on('error', (err) => {
-  console.error('Redis index client error', err);
+  console.error('Redis client error', err);
 });
 
 module.exports = { redisClient };
